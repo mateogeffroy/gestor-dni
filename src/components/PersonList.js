@@ -22,6 +22,7 @@ const PersonList = ({ apiUrl, refreshDependency }) => {
   const [personas, setPersonas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isBackendOnline, setIsBackendOnline] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [trabajoFilter, setTrabajoFilter] = useState('todos');
 
